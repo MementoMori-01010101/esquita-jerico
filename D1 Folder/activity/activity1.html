@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <title>Activity</title>
+  </head>
+  <body>
+    <main>
+      <h2>Welcome to Cafe Delights</h2>
+      <h5>Your cozy corner for the best coffee and treats in town.</h5>
+      <h3>Contact Us</h3>
+      <h5>We'd love to hear from you! Please fill out the form below:</h5>
+
+      <h5>Personal Information</h5>
+      <form action="" method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name" required /><br />
+        <label for="email">Email:</label>
+        <input type="email" name="email" required /><br />
+        <label for="number">Phone Number:</label>
+        <input type="number" name="number" /><br />
+        <label for="birthdate">Date of Birth</label>
+        <input type="date" name="birthdate" required />
+      </form>
+      <h5>Visit Information</h5>
+      <form action="" method="post">
+        <label for="pdate">Preferred Visit Date:</label>
+        <input type="date" name="pdate" required /><br />
+        <label for="ptime">Preffered Time:</label>
+        <input type="time" name="ptime" requireds /><br />
+        <label for="customer">Are you a returning customer?</label><br />
+        <input type="radio" id="yes" name="customer" />
+        <label for="yes">Yes</label><br />
+        <input type="radio" id="no" name="customer" />
+        <label for="no">No</label>
+      </form>
+      <h5>Order Preferences</h5>
+      <form action="" method="post">
+        <label for="favdrink">Favorite Drink:</label>
+        <select name="favdrink" id="favdrink">
+          <option value="latte">Latte</option>
+          <option value="mocha">Mocha</option>
+          <option value="vanilla">Vanilla</option>
+          <option value="chocolate">Chocolate</option>
+        </select>
+        <br />
+        <label for="preference">Select your dietary preferences:</label><br />
+        <input type="checkbox" name="preference" id="vegan" />
+        <label for="vegan">Vegan</label><br />
+        <input type="checkbox" name="preference" id="vegetarian" />
+        <label for="vegetarian">Vegetarian</label><br />
+        <input type="checkbox" name="preference" id="gluten-free" />
+        <label for="gluten-free">Gluten-Free</label>
+      </form>
+      <footer>
+        <h5>Feedback</h5>
+        <label for="rate">Rate Your Last Visit (1-5):</label>
+        <input type="range" min="1" max="5" /><br />
+        <label for="comments">Additional Comments:</label><br />
+        <textarea name="comments" id="comments" rows="7" cols="30"></textarea
+        ><br />
+        <label for="newsletter">Would you like to receive our newslater?</label>
+        <input type="checkbox" name="newsletter" id="newsletter" /><br />
+        <button type="submit">Submit</button>
+      </footer>
+    </main>
+  </body>
+</html>
