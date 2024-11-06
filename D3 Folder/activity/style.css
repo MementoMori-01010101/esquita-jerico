@@ -1,0 +1,232 @@
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  color: #333;
+}
+nav {
+  background-color: #333;
+  text-align: center;
+  padding: 10px 0;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  display: inline-block;
+  font-size: 18px;
+}
+nav a:hover {
+  background-color: #444;
+}
+
+/* Home Section */
+#home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #fff;
+}
+#home h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+#home p {
+  font-size: 1.2em;
+  margin-top: 10px;
+  max-width: 60%;
+}
+#home img {
+  width: 40%;
+  border-radius: 8px;
+}
+
+/* About Us Section */
+#about {
+  display: flex;
+  padding: 50px 20px;
+  background-color: #fafafa;
+}
+#about img {
+  width: 40%;
+  border-radius: 8px;
+}
+#about .text {
+  margin-left: 20px;
+  max-width: 55%;
+}
+#about h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+#about p {
+  font-size: 1.2em;
+}
+
+/* Menu Section */
+#menu {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 50px 20px;
+  background-color: #fff;
+}
+#menu h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #333;
+}
+.menu-item {
+  text-align: center;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 10px;
+}
+.menu-item img {
+  width: 100%;
+  border-radius: 8px;
+}
+.menu-item p {
+  font-size: 1.1em;
+  margin: 10px 0;
+}
+.menu-item .price {
+  font-size: 1.2em;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Gallery Section */
+#gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 50px 20px;
+  background-color: #fafafa;
+}
+#gallery h2 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #333;
+  grid-column: span 3; /* Ensures the heading spans all columns */
+}
+#gallery img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+#gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Review Section */
+#review {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 50px 20px;
+  background-color: #fff;
+}
+.section-title {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #333;
+  grid-column: span 2; /* Makes the title span across both columns */
+}
+.review-item {
+  text-align: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+}
+.review-item img {
+  width: 80%; /* Adjust image size */
+  max-width: 200px; /* Optional max-width */
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+.review-item p {
+  font-size: 1.1em;
+}
+
+/* Order Section */
+#order {
+  display: flex;
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center; /* Centers the content vertically */
+  padding: 50px 20px;
+  background-color: #fafafa;
+  flex-wrap: wrap; /* Ensures the layout wraps on smaller screens */
+}
+
+/* Title */
+.section-title {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #333;
+  width: 100%; /* Ensures the title is centered within the section */
+}
+
+/* Image and Order Form Container */
+.order-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1000px; /* Sets a max-width for the entire container */
+  flex-wrap: wrap; /* Ensures it wraps on small screens */
+  gap: 30px; /* Adds space between image and form */
+}
+
+/* Image Styling */
+#order img {
+  width: 50%; /* Set the image width to 50% of the container */
+  height: auto; /* Keep the aspect ratio */
+  border-radius: 8px;
+  object-fit: cover; /* Ensures the image covers the area without stretching */
+  max-width: 600px; /* Optional: limit the image's maximum size */
+}
+
+/* Order Form Styling */
+.order-form {
+  width: 50%; /* Set form width to 50% of the container */
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 600px; /* Ensures the form doesn't get too wide */
+}
+
+.order-form input,
+.order-form textarea {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+.order-form button {
+  padding: 15px;
+  font-size: 1.2em;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.order-form button:hover {
+  background-color: #555;
+}
