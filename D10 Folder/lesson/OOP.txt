@@ -1,0 +1,78 @@
+Object Oriented Programming
+- a style of programming or paradigm that is centered around objects
+rather than functions
+
+4 Pillars of Object-oriented Programming
+
+1. Encapsulation
+- group of related variables and functions that operates into objects
+- reduce complexity + increase reusability
+
+2. Abstraction
+- hide the details and the complexity and show only the essentials
+- reduce complexity + isolate impact of changes
+
+3. Inheritance
+- eliminate redundant code
+
+4. Polymorphism
+- refactor ugly switch/case statements
+
+// Object literal syntax
+const circle = {};
+
+- an object in javascript is a collection of key value pairs
+- if a member of an object is a function we refer to that as a method
+- a property in an object is used to hold values
+- a function or a method is used to define logic
+
+2 ways to create an object:
+1. Factory function
+2. Constructor function
+
+Constructor Property
+- every object has a constructor property and that references
+the function that was used to construct or create that object
+
+Functions are Objects
+
+Value vs Reference Types
+- Value types (Primitives)
+    - number
+    - string
+    - boolean
+    - symbol
+    - undefined
+    - null
+
+- Reference types
+    - object
+    - function
+    - array
+
+Primitives are copied by their value
+Objects(reference types) are copied by their reference
+
+Adding/Removing Properties
+
+Enumerating Properties
+enumerate all the members in an object, you can use:
+-for in loop
+to get all the keys in an object:
+-Object.keys
+to check for the existence of a property or a method in an object
+-use the in operator
+
+scope refers to the context or environment in which variables
+are declared and can be accessed.
+The two types of scope are local and global:
+1. Global variables are those  declared outside of a block.
+2. Local variables are those declared inside of a block.
+closure is a function having access to the parent scope,
+even after the parent function has closed.
+scope is temporary but closure stays there.
+
+Getters/Setters
+- functions that allow you to get and set object values, respectively.
+Getter functions return the value of the specified property.
+Setter functions can set the value of the specified property.
