@@ -1,0 +1,46 @@
+// a) Create Operation:
+// Insert at least three book documents with different fields such as title, author, genre, and publication year.
+db.Books.insertMany([{
+  "title": "To Kill a Mockingbird",
+  "author": "Harper Lee",
+  "genre": "Fiction",
+  "publicationYear": 1960
+},{
+  "title": "1984",
+  "author": "George Orwell",
+  "genre": "Dystopian",
+  "publicationYear": 1949
+},{
+  "title": "Moby Dick",
+  "author": "Herman Melville",
+  "genre": "Adventure",
+  "publicationYear": 1851
+}])
+
+// b) Read Operation:
+// Retrieve all the book documents in the "Books" collection.
+db.Books.find()
+
+// Retrieve a specific book document based on its title or author.
+To find a book by its title:
+db.Books.find({title: "Moby Dick"})
+
+To find a book by its author:
+db.Books.find({author: "Herman Melville"})
+
+// c) Update Operation:
+// Update the genre of a book document.
+db.Books.updateOne({title: '1984'}, {$set: {genre: "Comedy" }})
+
+// Update the publication year of a book document.
+db.Books.updateOne({title: '1984'}, {$set: {publicationYear: 1950}})
+
+// d) Delete Operation:
+// Delete a book document based on its title or author.
+To delete a book by its title:
+db.Books.deleteOne({title: "1984"})
+
+To delete a book by its author:
+db.Books.deleteOne({author: 'Harper Lee'})
+
+// Step 4: After each operation, verify the changes by re-reading the data from the "Books" collection.

@@ -1,0 +1,17 @@
+Databases
+
+- Relational Database (MySQL)
+Tables
+- rows and columns
+
+Document Database
+- MongoDB Atlas, excel
+
+Relational  vs  NoSQL
+Tables          Collections
+Records         Documents
+
+C - create
+R - read
+U - update
+D - delete
