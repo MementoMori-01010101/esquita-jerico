@@ -1,0 +1,133 @@
+1. Retrieve all courses in the "Programming" category.
+{
+  _id: ObjectId('673de148a34bc67eeb1c4107')
+}
+
+2. Retrieve all students enrolled in the course "Introduction to MongoDB".
+{
+  _id: ObjectId('673de98ea34bc67eeb1c411c'),
+  students: [
+    ObjectId('673de182a34bc67eeb1c4110'),
+    ObjectId('673de182a34bc67eeb1c4111')
+  ]
+}
+
+3. Retrieve course details, including category and instructor information, for all courses.
+{
+  categoryDetails: [
+    {
+      name: 'Programming'
+    }
+  ],
+  instructorDetails: [
+    {
+      name: 'John Smith',
+      email: 'john.smith@example.com'
+    }
+  ]
+}
+{
+  categoryDetails: [
+    {
+      name: 'Data Science'
+    }
+  ],
+  instructorDetails: [
+    {
+      name: 'Jane Doe',
+      email: 'jane.doe@example.com'
+    }
+  ]
+}
+
+4. Retrieve all reviews for the course "Data Science with Python," including the details of the students who wrote them.
+{
+  _id: ObjectId('673de98ea34bc67eeb1c411d'),
+  reviews: {
+    rating: 4,
+    comment: 'Good introduction.'
+  },
+  studentDetails: [
+    {
+      name: 'Charlie White',
+      email: 'charlie.w@example.com'
+    }
+  ]
+}
+
+5. Find the average rating for each course.
+{
+  _id: 'Introduction to MongoDB',
+  averageRating: 4.5
+}
+{
+  _id: 'Data Science with Python',
+  averageRating: 4
+}
+
+6. Retrieve all courses taught by the instructor "Jane Doe".
+{
+  _id: ObjectId('673de98ea34bc67eeb1c411d'),
+  title: 'Data Science with Python',
+  description: 'A comprehensive guide to data science using Python.',
+  category: ObjectId('673de148a34bc67eeb1c4108'),
+  instructor: ObjectId('673de168a34bc67eeb1c410d'),
+  students: [
+    ObjectId('673de182a34bc67eeb1c4112')
+  ],
+  reviews: [
+    {
+      rating: 4,
+      comment: 'Good introduction.',
+      student: ObjectId('673de182a34bc67eeb1c4112')
+    }
+  ]
+}
+
+7. Count the number of courses in each category.
+{
+  courseCount: 1,
+  category: 'Data Science'
+}
+{
+  courseCount: 1,
+  category: 'Programming'
+}
+
+
+8. Find all students who have reviewed the course "Introduction to MongoDB".
+{
+  _id: ObjectId('673de98ea34bc67eeb1c411c'),
+  studentDetails: {
+    name: 'Alice Johnson',
+    email: 'alice.j@example.com'
+  }
+}
+{
+  _id: ObjectId('673de98ea34bc67eeb1c411c'),
+  studentDetails: {
+    name: 'Bob Brown',
+    email: 'bob.b@example.com'
+  }
+}
+
+9. Retrieve the titles of all courses where the average rating is above 4.
+{
+  title: 'Introduction to MongoDB'
+}
+
+10. Retrieve all students who are enrolled in courses taught by "John Smith".
+{
+  _id: ObjectId('673de98ea34bc67eeb1c411c'),
+  studentDetails: {
+    name: 'Alice Johnson',
+    email: 'alice.j@example.com'
+  }
+}
+{
+  _id: ObjectId('673de98ea34bc67eeb1c411c'),
+  studentDetails: {
+    name: 'Bob Brown',
+    email: 'bob.b@example.com'
+  }
+}
