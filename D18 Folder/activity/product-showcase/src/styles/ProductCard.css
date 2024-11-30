@@ -1,0 +1,23 @@
+.product-card {
+  border-radius: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.product-image {
+  object-fit: contain;
+  height: 200px;
+  width: 100%;
+  padding: 10px;
+  background-color: #f8f9fa;
+}
+
+.text-truncate {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
